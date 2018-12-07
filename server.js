@@ -35,7 +35,7 @@ const database = [
 const server = express();
 server.use(bodyparser.json());
 server.use(cors());
-server.listen(3000, () => {
+server.listen(process.env.PORT || 3000, () => {
   console.log("App is running on port 3000");
 });
 
